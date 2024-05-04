@@ -9,3 +9,5 @@ Tecnologias utilizadas no projeto:
 - CSS
 - JS
 - PHP + MySQL
+
+*ATENÇÃO: CUIDADO COM A SOBREPOSIÇÃO DE ARQUIVO!*
