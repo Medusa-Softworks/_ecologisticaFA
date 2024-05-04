@@ -11,7 +11,7 @@
 
 <body>
     <?php
-    include_once("./CabRod/cabecalho.php");
+    include_once("./cabecalho-rodape/cabecalho.php");
     ?>
     <main>
         <!-- O menu criado deve ser do tipo dropdown para facilitar a navegação pelo cliente -->
