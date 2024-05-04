@@ -1,5 +1,5 @@
 <div class ="header">  
-    <h1 align="center"><img src="../img-icon/icons/ecologistica.png"
+    <h1 align="center"><img src="../assets/img/icons/caminhao.png"
         width= "100px" <br> Logística Inteligente
     </h1>
 

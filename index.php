@@ -6,12 +6,12 @@
     <title>Ecologística - LOGIN</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"> 
     <link rel="icon" href="./img-icon/icons/login-seguro.png">
-    <link rel="stylesheet" href="./assets/design.css">
+    <link rel="stylesheet" href="./assets/css/design.css">
 </head>
 <body>
 <div class="menu">
    <div class="header">
-        <h1 class="title is-size-2 has-text-centered">ECOLOGÍSTICA <img src="./img-icon/icons/caminhao.png" width="64px"></h1>
+        <h1 class="title is-size-2 has-text-centered">ECOLOGÍSTICA <img src="./assets/img/icons/caminhao.png" width="64px"></h1>
     </div>
 </div>
 <section class="section">
@@ -42,7 +42,7 @@
                 </div>
                 <div class="control">
                 <button id="google" class="button is-info">
-                <img src="./img-icon/icons/google.png" style="width: 35px; height: 35px;">
+                <img src="./assets/img/icons/google.png" style="width: 35px; height: 35px;">
                 </button>
                 </div>
             </div>
@@ -50,7 +50,7 @@
     </div>
 </section>
 
-<?php include_once("./rodape.php"); ?>
+<?php include_once("./cabecalho-rodape/rodape.php"); ?>
   
     </main>
 

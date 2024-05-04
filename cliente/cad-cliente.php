@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de clientes</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="../assets/css/design.css">
     
 </head>
 
 <body>
     <?php
-      include_once("../CabRod/cabecalho.php");
+      include_once("../cabecalho-rodape/cabecalho.php");
       include_once("../ViaCep.php");
     ?>
 
@@ -169,7 +170,7 @@
         }
     </script>
     <?php 
-        include_once("../CabRod/rodape.php");
+        include_once("../cabecalho-rodape/rodape.php");
     ?>
 
 </body>
