@@ -6,25 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página Inicial</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
-    <link rel="stylesheet" href="./css/design.css">
+    <link rel="stylesheet" href="./assets/design.css">
 </head>
 
 <body>
     <?php
-    include_once("./CabRod/cabecalho.php");
+    include_once("./cabecalho-rodape/cabecalho.php");
     ?>
     <main>
         <!-- O menu criado deve ser do tipo dropdown para facilitar a navegação pelo cliente -->
+        
         <div class="navbar" role="navigation" aria-label="main navigation">
             <div class="navbar-brand">
+           
                 <a class="navbar-item" href="https://youtu.be/dQw4w9WgXcQ">
-                    ECOLOGÍSTICA <img src="./sistema/img-icon/icons/caminhao.png" width="64px" style="margin-left: 10px;">
+                
+                    ECOLOGÍSTICA <img src="./img-icon/icons/caminhao.png" width="64px" style="margin-left: 10px;">
                 </a>
                 <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="dropdown-menu">
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
                 </a>
+               
             </div>
 
             <div id="dropdown-menu" class="navbar-menu">
@@ -35,10 +39,10 @@
                         </a>
                         <div class="navbar-dropdown">
                             <a class="navbar-item" href="./usuario/cad-usuario.php">USUÁRIOS</a>
-                            <a class="navbar-item" href="./cliente/cad-cliente.php">CLIENTES</a>
-                            <a class="navbar-item" href="./fornecedor/cad-fornecedor.php">FORNECEDORES</a>
-                            <a class="navbar-item" href="./servico/cad-servico.php">SERVIÇOS</a>
-                            <a class="navbar-item" href="./compras/cad-compras.php">COMPRAS</a>
+                            <a class="navbar-item" href="./frete/cad-frete.php">FRETE</a>
+                            <a class="navbar-item" href="./contratante/cad-contratante.php">CONTRATANTE</a>
+                            <a class="navbar-item" href="./financeiro/cad-financeiro.php">FINANCEIRO</a>
+                            <a class="navbar-item" href="./veiculo/cad-veiculo.php">VEÍCULOS</a>
                         </div>
                     </div>
 
@@ -48,11 +52,11 @@
                         </a>
                         <div class="navbar-dropdown">
                             <a class="navbar-item" href="./usuario/view-usuario.php">USUÁRIOS</a>
-                            <a class="navbar-item" href="./cliente/view-cliente.php">CLIENTES</a>
-                            <a class="navbar-item" href="./fornecedor/view-fornecedor.php">FORNECEDORES</a>
-                            <a class="navbar-item" href="#">SERVIÇOS</a>
-                            <a class="navbar-item" href="#">ESTOQUE</a>
-                            <a class="navbar-item" href="#">FATURAMENTO</a>
+                            <a class="navbar-item" href="./frete/view-frete.php">FRETE</a>
+                            <a class="navbar-item" href="./financeiro/view-financeiro.php">FINANCEIRO</a>
+                            <a class="navbar-item" href="./contratante/view-contratante.php">CONTRATANTE</a>
+                            <a class="navbar-item" href="./veiculo/view-veiculo.php">VEÍCULO</a>
+                           
                         </div>
                     </div>
 

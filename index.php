@@ -5,19 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ecologística - LOGIN</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"> 
-    <link rel="icon" href="./sistema/img-icon/icons/login-seguro.png">
-    <link rel="stylesheet" href="./sistema/css/design.css">
+    <link rel="icon" href="./img-icon/icons/login-seguro.png">
+    <link rel="stylesheet" href="./assets/design.css">
 </head>
 <body>
 <div class="menu">
    <div class="header">
-        <h1 class="title is-size-2 has-text-centered">ECOLOGÍSTICA <img src="./sistema/img-icon/icons/caminhao.png" width="64px"></h1>
+        <h1 class="title is-size-2 has-text-centered">ECOLOGÍSTICA <img src="./img-icon/icons/caminhao.png" width="64px"></h1>
     </div>
 </div>
 <section class="section">
     <div class="container">
         <h3 class="title is-3 has-text-centered">Seja bem-vindo à Ecologística! <br> Sistema inteligente para gerenciamento de fretes.</h3>
-        <form action="./sistema/menu.php" method="POST">
+        <form action="./menu.php" method="POST">
             <div class="field">
                 <label for="usuario" class="label">Usuário Cadastrado</label>
                 <div class="control">
@@ -41,14 +41,16 @@
                     <button class="button is-danger" onclick="confirmarSaida()">SAIR</button>
                 </div>
                 <div class="control">
-                    <button id="google" class="button is-info"><img src="./img-icon/icons/google.png"></button>
+                <button id="google" class="button is-info">
+                <img src="./img-icon/icons/google.png" style="width: 35px; height: 35px;">
+                </button>
                 </div>
             </div>
         </form>
     </div>
 </section>
 
-<?php include_once("./sistema/CabRod/rodape.php"); ?>
+<?php include_once("./rodape.php"); ?>
   
     </main>
 
