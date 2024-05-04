@@ -11,14 +11,14 @@
 
 <body>
     <?php
-    include_once("./cabecalho-rodape/cabecalho.php");
+    include_once("./CabRod/cabecalho.php");
     ?>
     <main>
         <!-- O menu criado deve ser do tipo dropdown para facilitar a navegação pelo cliente -->
         <div class="navbar" role="navigation" aria-label="main navigation">
             <div class="navbar-brand">
-                <a class="navbar-item" href="#">
-                    ECOLOGÍSTICA <img src="./sistema/img-icon/icons/caminhao.png" width="32px" style="margin-left: 10px;">
+                <a class="navbar-item" href="https://youtu.be/dQw4w9WgXcQ">
+                    ECOLOGÍSTICA <img src="./sistema/img-icon/icons/caminhao.png" width="64px" style="margin-left: 10px;">
                 </a>
                 <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="dropdown-menu">
                     <span aria-hidden="true"></span>
@@ -37,7 +37,6 @@
                             <a class="navbar-item" href="./usuario/cad-usuario.php">USUÁRIOS</a>
                             <a class="navbar-item" href="./cliente/cad-cliente.php">CLIENTES</a>
                             <a class="navbar-item" href="./fornecedor/cad-fornecedor.php">FORNECEDORES</a>
-                            <a class="navbar-item" href="./cachorro/cad-cachorro.php">CACHORROS</a>
                             <a class="navbar-item" href="./servico/cad-servico.php">SERVIÇOS</a>
                             <a class="navbar-item" href="./compras/cad-compras.php">COMPRAS</a>
                         </div>
@@ -51,7 +50,6 @@
                             <a class="navbar-item" href="./usuario/view-usuario.php">USUÁRIOS</a>
                             <a class="navbar-item" href="./cliente/view-cliente.php">CLIENTES</a>
                             <a class="navbar-item" href="./fornecedor/view-fornecedor.php">FORNECEDORES</a>
-                            <a class="navbar-item" href="./cachorro/view-cachorro.php">CACHORROS</a>
                             <a class="navbar-item" href="#">SERVIÇOS</a>
                             <a class="navbar-item" href="#">ESTOQUE</a>
                             <a class="navbar-item" href="#">FATURAMENTO</a>
@@ -59,7 +57,7 @@
                     </div>
 
                     <a class="navbar-item" href="#">
-                        FATURAMENTO
+                        FINANCEIRO
                     </a>
 
                     <a class="navbar-item" href="#">
@@ -78,19 +76,55 @@
                 </div>
             </div>
         </div>
-    </main>
 
-    <?php 
-    include_once("./CabRod/rodape.php");
-    ?>
+        <!-- Carrossel de imagens -->
+        <div class="carousel">
+    <div class="carousel-container">
+        <div class="carousel-item">
+            <img src="https://blog.neemo.com.br/wp-content/uploads/2020/11/GettyImages-1218787688-Converted-01.png" alt="Imagem 1" width="1280" height="720">
+        </div>
+        <div class="carousel-item">
+            <img src="https://static.vecteezy.com/ti/vetor-gratis/p1/4215423-seis-icones-da-ecologia-gratis-vetor.jpg" alt="Imagem 2" width="1280" height="720">
+        </div>
+        <div class="carousel-item">
+            <img src="https://www.designi.com.br/images/preview/10760441.jpg" alt="Imagem 3" width="1280" height="720">
+        </div>
+    </div>
+    <button class="carousel-prev">Anterior</button>
+    <button class="carousel-next">Próximo</button>
+</div>
+    <
 
     <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const carouselContainer = document.querySelector('.carousel-container');
+            const carouselItems = document.querySelectorAll('.carousel-item');
+            const prevBtn = document.querySelector('.carousel-prev');
+            const nextBtn = document.querySelector('.carousel-next');
+            const itemCount = carouselItems.length;
+            let currentIndex = 0;
+
+            prevBtn.addEventListener('click', function () {
+                currentIndex = (currentIndex - 1 + itemCount) % itemCount;
+                updateCarousel();
+            });
+
+            nextBtn.addEventListener('click', function () {
+                currentIndex = (currentIndex + 1) % itemCount;
+                updateCarousel();
+            });
+
+            function updateCarousel() {
+                carouselContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
+            }
+        });
+
         function confirmarFecharSistema() {
             var confirmacao = confirm("Deseja fechar o sistema?");
 
             if (confirmacao) {
-                alert("Antes de sair, verifique se foi realizado o backup.");
-                window.location.href = "about:blank";
+                alert("Antes de sair, verifique se foi realizado o backup das informações.");
+                window.location.href = "index.php";
             } else {
                 return false; // Impede a execução do link
             }
