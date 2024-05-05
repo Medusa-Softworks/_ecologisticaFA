@@ -57,7 +57,7 @@
                             <a class="navbar-item" href="./frete/view-frete.php">FRETE</a>
                             <a class="navbar-item" href="./financeiro/view-financeiro.php">FINANCEIRO</a>
                             <a class="navbar-item" href="./contratante/view-contratante.php">CONTRATANTE</a>
-                            <a class="navbar-item" href="./veiculo/view-veiculo.php">VEÍCULO</a>
+                            <a class="navbar-item" href='./veiculo/view-veiculo.php'>VEÍCULO</a>
                            
                         </div>
                     </div>

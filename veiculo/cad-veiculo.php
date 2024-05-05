@@ -54,7 +54,7 @@
                 <div class="columns">
                     <div class="column">
                         <div class="field">
-                            <label class="label" for="bairro">Renavam do Veículo</label>
+                            <label class="label" for="renavam"> Renavam do Veículo</label>
                             <div class="control">
                                 <input class="input" type="text" name="renavam" id="renavam" placeholder="Informe o Renavam:">
                             </div>
@@ -70,7 +70,7 @@
                     </div>
                     <div class="column">
                         <div class="field">
-                            <label class="label" for="cidade">Ano do Veículo</label>
+                            <label class="label" for="ano">Ano de fabricação</label>
                             <div class="control">
                                 <input class="input" type="date" name="ano" id="ano" placeholder="Informe o Ano do Veículo:" title="Mês e Dia podem ser aproximados, mas não crie divergências com o ANO!">
                             </div>
@@ -114,7 +114,7 @@
                 </div>
 
                 <div class="field">
-                            <label class="label" for="cidade">Data do Licenciamento</label>
+                            <label class="label" for="dt_licenciamento">Data do Licenciamento</label>
                             <div class="control">
                                 <input class="input" type="date" name="licenciamento" id="licenciamento" placeholder="Informe a Data:">
                             </div>
@@ -147,15 +147,15 @@
             var marca = document.getElementById("marca").value;
             var modelo = document.getElementById("modelo").value;
             var tipo = document.getElementById("tipo").value;
-            var bairro = document.getElementById("bairro").value;
-            var cep = document.getElementById("cep").value;
-            var cidade = document.getElementById("cidade").value;
-            var estado = document.getElementById("estado").value;
-            var telefone = document.getElementById("telefone").value;
-            var email = document.getElementById("email").value;
+            var renavam = document.getElementById("renavam").value;
+            var placa = document.getElementById("placa").value;
+            var ano = document.getElementById("ano").value;
+            var conservacao = document.getElementById("conservacao").value;
+            var combustivel = document.getElementById("combustivel").value;
+            var dt_licenciamento = document.getElementById("dt_licenciamenot").value;
 
-            if (marca === "" || modelo === "" || tipo === "" || bairro === "" || cep === "" ||
-                cidade === "" || estado === "" || telefone === "" || email === "") {
+            if (marca === "" || modelo === "" || tipo === "" || renavam === "" || placa === "" ||
+                ano === "" || conservacao === "" || combustivel === "" || dt_licenciamento === "") {
                 alert("Por favor, preencha todos os campos antes de salvar.");
                 return false; // Impede o envio do formulário
             }
@@ -171,12 +171,12 @@
             document.getElementById("marca").value = "";
             document.getElementById("modelo").value = "";
             document.getElementById("tipo").value = "";
-            document.getElementById("bairro").value = "";
-            document.getElementById("cep").value = "";
-            document.getElementById("cidade").value = "";
-            document.getElementById("estado").value = "";
-            document.getElementById("telefone").value = "";
-            document.getElementById("email").value = "";
+            document.getElementById("renavam").value = "";
+            document.getElementById("placa").value = "";
+            document.getElementById("ano").value = "";
+            document.getElementById("conservacao").value = "";
+            document.getElementById("combustivel").value = "";
+            document.getElementById("dt_licenciamento").value = "";
         }
     </script>
 </body>
