@@ -1,9 +1,19 @@
 /* Estilos para o menu */
 .navbar {
-    background-color: #b0e2ff; /* cor de fundo do menu */
+    background-color: #54befc; /* cor de fundo do menu */
     border-bottom: 1px solid #c2e6fc; /* borda inferior */
     justify-content: center; /* centraliza o conteúdo horizontalmente */
     height: 50px; /* altura do menu */
+}
+
+.navbar-menu-bar {
+    position: absolute; /* posição absoluta em relação ao .navbar-menu */
+    bottom: 0;
+    left: 0;
+    height: 3px; /* altura da barra */
+    background-color: #007bff; /* cor da barra azul */
+    width: 0; /* largura inicial, será ajustada com JavaScript */
+    transition: width 0.3s ease; /* animação de transição da largura */
 }
 
 .navbar-burger {
@@ -11,10 +21,22 @@
 }
 
 .navbar-menu {
-    background-color: #b5e4ff; /* cor de fundo do menu */
-    max-width: 800px; /* largura máxima do menu */
-    width: 100%; /* largura total do menu */
-    padding: 5px; /* remove o padding interno */
+    position: relative; /* torna o posicionamento relativo para usar o ::before */
+    background-image: linear-gradient(to right, #bbdbfd, #b5e4ff);
+    max-width: 800px;
+    width: 100%;
+    padding: 5px;
+}
+
+.navbar-menu::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px; /* Reduzindo a altura da barra para 1px */
+    background-color: #007bff; /* Cor da barra */
+    z-index: -1; /* Colocando a barra atrás do conteúdo do menu */
 }
 
 .navbar-item {
