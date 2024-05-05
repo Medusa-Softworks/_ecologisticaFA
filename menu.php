@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página Inicial</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
-    <link rel="stylesheet" href="./assets/design.css">
+    <link rel="stylesheet" href="./css/design.css">
 </head>
 
 <body>
@@ -21,7 +21,7 @@
            
                 <a class="navbar-item" href="https://youtu.be/dQw4w9WgXcQ">
                 
-                    ECOLOGÍSTICA <img src="./img-icon/icons/caminhao.png" width="64px" style="margin-left: 10px;">
+                    PÁGINA INCIAL 
                 </a>
                 <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="dropdown-menu">
                     <span aria-hidden="true"></span>
@@ -81,23 +81,14 @@
             </div>
         </div>
 
-        <!-- Carrossel de imagens -->
-        <div class="carousel">
-    <div class="carousel-container">
-        <div class="carousel-item">
-            <img src="https://blog.neemo.com.br/wp-content/uploads/2020/11/GettyImages-1218787688-Converted-01.png" alt="Imagem 1" width="1280" height="720">
+        <!-- Informação centralizada -->
+        <div class="columns is-centered">
+            <div class="column is-half has-text-centered">
+                <p class="title is-4">Sua informação centralizada aqui</p>
+            </div>
         </div>
-        <div class="carousel-item">
-            <img src="https://static.vecteezy.com/ti/vetor-gratis/p1/4215423-seis-icones-da-ecologia-gratis-vetor.jpg" alt="Imagem 2" width="1280" height="720">
-        </div>
-        <div class="carousel-item">
-            <img src="https://www.designi.com.br/images/preview/10760441.jpg" alt="Imagem 3" width="1280" height="720">
-        </div>
-    </div>
-    <button class="carousel-prev">Anterior</button>
-    <button class="carousel-next">Próximo</button>
-</div>
-    <
+    </main>
+    
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
