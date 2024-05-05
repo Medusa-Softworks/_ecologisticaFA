@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página Inicial</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
-    <link rel="stylesheet" href="./css/design.css">
+    <link rel="icon" href="./sistema/img-icon/icons/login-seguro.png">
+    <link rel="stylesheet" href="./css/bulmamenu.css">
+
 </head>
 
 <body>
@@ -82,12 +84,60 @@
         </div>
 
         <!-- Informação centralizada -->
-        <div class="columns is-centered">
-            <div class="column is-half has-text-centered">
-                <p class="title is-4">Sua informação centralizada aqui</p>
-            </div>
+    <div class="columns is-centered">
+        <div class="column is-half has-text-centered">
+            <p class="title is-4">Bem-vindo à página Inicial!</p>
         </div>
+    </div>
+
+    <!-- Mensagem informativa centralizada -->
+    <div class="columns is-centered">
+        <div class="column is-half">
+            <article class="message is-info">
+                <div class="message-header">
+                    <p>Mensagem dos Desenvolvedores</p>
+                </div>
+                <div class="message-body">
+                    O sistema está em fase de desenvolvimento inicial, mas em breve tudo estará pronto!
+                    <strong>O ECOLOGÍSTICA</strong>, vem para auxiliar trabalhadores fretistas, definindo melhores
+                    rotas e maneiras eficientes de preservar o meio ambiente com seu veículo de entrega. A <strong>equipe de desenvolvimento</strong>
+                    está trabalhando arduamente neste projeto, tanto na parte da engenharia quanto na parte do desenvolvimento em si.
+                    Queremos que você acompanhe nosso trabalho de pertinho, e juntos, vamos melhorar a nossa qualidade de vida!
+                </div>
+            </article>
+        </div>
+    </div>
+
+    <div class="columns is-centered">
+    <div class="column is-half">
+        <article class="message">
+            <div class="message-body">
+                <strong><p>Redes Sociais - Equipe de Desenvolvimento</p></strong>
+            </div>
+            <div class="message-body">
+                Estamos presentes em várias redes sociais! Siga-nos para ficar por dentro das últimas novidades e atualizações do nosso projeto.
+                <br>
+                <strong>Siga-nos nas redes sociais:</strong>
+                <br>
+                <a href="https://www.pudim.com.br" target="_blank">Facebook</a>
+                <br>
+                <a href="https://www.pudim.com.br" target="_blank">Instagram</a>
+                <br>
+                <a href="https://www.pudim.com.br" target="_blank">LinkedIn</a>
+                <br>
+                <a href="https://www.pudim.com.br" target="_blank">Twitter</a>
+                <br>
+                <a href="https://www.pudim.com.br" target="_blank">YouTube</a>
+                <br>
+                <a href="https://www.pudim.com.br" target="_blank">Pinterest</a>
+            </div>
+        </article>
+    </div>
+</div>
     </main>
+
+    </main>
+
     
 
     <script>
