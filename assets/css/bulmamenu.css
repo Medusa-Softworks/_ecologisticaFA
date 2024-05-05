@@ -1,0 +1,37 @@
+/* Estilos para o menu */
+.navbar {
+    background-color: #b0e2ff; /* cor de fundo do menu */
+    border-bottom: 1px solid #c2e6fc; /* borda inferior */
+    justify-content: center; /* centraliza o conteúdo horizontalmente */
+    height: 50px; /* altura do menu */
+}
+
+.navbar-burger {
+    color: #000000; /* cor do ícone do menu */
+}
+
+.navbar-menu {
+    background-color: #b5e4ff; /* cor de fundo do menu */
+    max-width: 800px; /* largura máxima do menu */
+    width: 100%; /* largura total do menu */
+    padding: 5px; /* remove o padding interno */
+}
+
+.navbar-item {
+    color: #000000; /* cor do texto do item do menu */
+    padding: 0.5rem 1rem; /* ajusta o espaçamento dos itens */
+}
+
+.navbar-item:hover {
+    background-color: #000000; /* cor de fundo ao passar o mouse */
+}
+
+/* Estilos para o texto centralizado */
+.columns.is-centered {
+    margin-top: 2rem;
+}
+
+.title.is-4 {
+    font-size: 2rem; /* tamanho do texto */
+    color: #000000; /* cor do texto */
+}

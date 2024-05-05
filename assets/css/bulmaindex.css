@@ -1,0 +1,76 @@
+/* Estilos para o título */
+.title {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-family: Arial, sans-serif;
+    color: #000000; /* cor do texto */
+    text-align: center; /* centraliza o texto */
+    font-size: 10px; /* tamanho do texto */
+}
+
+/* Estilos para os campos de entrada */
+.input {
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc; /* cor da borda */
+    padding: 0.3rem; /* reduz o padding */
+    width: 80%; /* largura do campo de texto */
+    max-width: 300px; /* largura máxima */
+}
+
+/* Estilos para os botões */
+.button {
+    margin: 0.5rem;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+}
+
+
+/* Estilos para o menu */
+.menu {
+    background-color: #82d1ff; /* cor de fundo do menu */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* sombra */
+    display: flex; /* ativa o modelo flexbox */
+    justify-content: center; /* centraliza horizontalmente */
+    align-items: center; /* centraliza verticalmente */
+    height: 100px; /* altura do menu */
+    margin-bottom: 10px;
+    font-size: 10px;
+}
+
+/* Estilos para o cabeçalho */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Estilos para o ícone do caminhão no título */
+.header img {
+    margin-left: 1rem;
+    margin-bottom: auto;
+}
+
+/* Estilos para o formulário */
+.form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* Estilos para a seção de boas-vindas */
+.section {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+/* Estilos para o botão do Google */
+#google {
+    margin-top: 1rem;
+}
+
+/* Estilos para o rodapé */
+.footer {
+    text-align: center;
+    margin-top: 2rem;
+    color: #666; /* cor do texto */
+}

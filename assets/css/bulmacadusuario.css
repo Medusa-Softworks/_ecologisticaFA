@@ -1,0 +1,49 @@
+/* Estilos para o formulário de cadastro de usuários */
+.container {
+    max-width: 800px; /* largura máxima do container */
+    margin: 0 auto; /* centraliza o container na página */
+    padding: 20px; /* espaçamento interno */
+}
+
+.title {
+    margin-bottom: 20px; /* espaçamento inferior do título */
+}
+
+.label {
+    font-weight: bold; /* texto em negrito */
+}
+
+.input {
+    margin-bottom: 15px; /* espaçamento inferior do campo de entrada */
+}
+
+.button {
+    margin-right: 10px; /* margem direita dos botões */
+}
+
+.button.is-link {
+    background-color: #3273dc; /* cor de fundo do botão de link */
+    border-color: #3273dc; /* cor da borda do botão de link */
+    color: #fff; /* cor do texto do botão de link */
+}
+
+.button.is-link:hover {
+    background-color: #2766cc; /* cor de fundo ao passar o mouse sobre o botão de link */
+    border-color: #2766cc; /* cor da borda ao passar o mouse sobre o botão de link */
+}
+
+.button.is-primary-light {
+    background-color: #f0f0f0; /* cor de fundo do botão primário claro */
+    border-color: #ccc; /* cor da borda do botão primário claro */
+    color: #333; /* cor do texto do botão primário claro */
+}
+
+.button.is-primary-light:hover {
+    background-color: #e0e0e0; /* cor de fundo ao passar o mouse sobre o botão primário claro */
+    border-color: #bbb; /* cor da borda ao passar o mouse sobre o botão primário claro */
+}
+
+/* Estilos para a mensagem de sucesso */
+.notification {
+    margin-top: 20px; /* espaçamento superior da mensagem de sucesso */
+}
