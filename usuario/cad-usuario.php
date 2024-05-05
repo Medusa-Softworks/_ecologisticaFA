@@ -4,16 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de Usuários</title>
+    <link rel="stylesheet" href="./css/bulmacadusuario.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
-    <link rel="icon" href="./assets/css/design.css"
-    
 </head>
 <body>
-    <?php
-    include_once("../cabecalho-rodape/cabecalho.php");   
-    // include_once("../ViaCep.php");
-    ?>
-      
     <main>
         <section class="section">
             <div class="container">
@@ -70,11 +64,11 @@
                     <div class="field is-grouped">
                         <div class="control">
                             <label class="label" for="senha">Senha</label>
-                            <input class="input" type="password" name="senha" id="senha" placeholder="Digite uma senha com 8 dígitos:">
+                            <input class="input" type="password" name="senha" id="senha" placeholder="Senha com 8 dígitos:">
                         </div>
                         <div class="control">
                             <label class="label" for="senha1">Confirmação de Senha</label>
-                            <input class="input" type="password" name="senha1" id="senha1" placeholder="Digite novamente a senha:">
+                            <input class="input" type="password" name="senha1" id="senha1" placeholder="Repita a senha:">
                         </div>
                     </div>
                     <div class="field is-grouped">

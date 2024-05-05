@@ -4,31 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Visualização de usuários</title>
-    <link rel="stylesheet" href="../assets/css/design.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="./sistema/css/bulmaviewuser.css">
 </head>
 <body>
      <?php
       include_once('../cabecalho-rodape/cabecalho.php');
       ?>
 
-      
-<main>
+<main class="section">
+    <h2 class="title is-2 has-text-centered">CONSULTA E MANIPULAÇÃO DE DADOS: USUÁRIOS</h2>
 
-<h2 align="center"> CONSULTA E MANIPULAÇÃO DE DADOS: USUÁRIOS</h2>
-
-    <div class = "container-fluid">
-        <table>
+    <div class="container is-fluid">
+        <table class="table is-fullwidth">
             <thead>
                 <tr>
-                    <th align="center" width="25"></th>
-                    <th width="150">NOME</th>
-                    <th width="150">RUA</th>
-                    <th width="25">Nº</th>
-                    <th width="150">CIDADE</th>
-                    <th align="center" width="40">TELEFONE</th>
-                    <th align="center" width="100">E-MAIL</th>
-                    <th align="center" width="25">EDITAR</th>
-                    <th align="center" width="25">EXCLUIR</th>              
+                    <th></th>
+                    <th>NOME</th>
+                    <th>RUA</th>
+                    <th>Nº</th>
+                    <th>CIDADE</th>
+                    <th>TELEFONE</th>
+                    <th>E-MAIL</th>
+                    <th>EDITAR</th>
+                    <th>EXCLUIR</th>              
                 </tr>
             </thead>
         
@@ -37,28 +36,28 @@
                 <?php 
                 require_once("./view-usuariobd.php");
 
-                if (isset($totalRegistros) && $totalRegistros> 0) {
+                if (isset($totalRegistros) && $totalRegistros > 0) {
                     foreach ($dados as $linha){
                 
                 ?>
                 <tr>
-                    <td align="center"><?=$linha["id"];?></td>
+                    <td><?=$linha["id"];?></td>
                     <td><?=$linha["nome"];?></td>
                     <td><?=$linha["rua"];?></td>   
                     <td><?=$linha["numero"];?></td>
                     <td><?=$linha["cidade"];?></td> 
-                    <td align="center"><?=$linha["telefone"];?></td>
-                    <td align="center"><?=$linha["email"];?></td>
+                    <td><?=$linha["telefone"];?></td>
+                    <td><?=$linha["email"];?></td>
 
-                    <td align="center">
-                        <a href="./atu-usuario.php?id=<?$linha['id'];?>">
-                        <img src='../img-icon/icons/atualizar.png' width= "45px" alt="Editar" title="Editar registro">
+                    <td>
+                        <a href="./atu-usuario.php?id=<?=$linha['id'];?>">
+                            <img src='../img-icon/icons/atualizar.png' width="30px" alt="Editar" title="Editar registro">
                         </a>
                     </td>
 
-                    <td align="center">
+                    <td>
                         <a href="./exc-usuario.php?id=<?=$linha['id'];?>"> 
-                        <img src='../img-icon/icons/lixo.png' alt="Deletar" title=" Apagar usuário">
+                            <img src='../img-icon/icons/lixo.png' alt="Deletar" title="Apagar usuário">
                         </a>
                     </td>
                 </tr>
@@ -70,16 +69,11 @@
         </table>
     </div>
 
-       <!-- Botões de ação -->
-        <div class="row-fluid jutify-center">
-            <input type="reset" value="VOLTAR" onclick="javascript:history.go(-1);">
-            <input type="reset" value="MENU PRINCIPAL" onclick="window.location.href='../menu.php';"> 
-            
-        </div>
+    <!-- Botões de ação -->
+    <div class="buttons is-centered">
+        <button class="button is-link" onclick="javascript:history.go(-1);">VOLTAR</button>
+        <button class="button is-primary" onclick="window.location.href='../menu.php';">MENU PRINCIPAL</button>
     </div>
-    </form>
 </main>
-
-
 </body>
-</html> 
+</html>
