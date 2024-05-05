@@ -8,87 +8,78 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
 </head>
 <body>
-<?php
-        require_once("./atu-usuario-view.php");
-        ?>
     <main>
         <section class="section">
             <div class="container">
-                <h2 class="title is-2 has-text-centered">Consulta e manutenção de dados: Usuários</h2>
-                <form action="./atu-usuariobd.php" method="POST" enctype="multipart/form-data">
-                <input type="hidden"
-                name="id" 
-                id="id" 
-                value="<?=$resultado["id"];?>">
-
+                <h2 class="title is-2 has-text-centered">CADASTRO DE USUÁRIOS</h2>
+                <form action="./cad-usuariobd.php" method="POST" enctype="multipart/form-data">
                     <div class="field">
                         <label class="label" for="nome">Nome Completo:</label>
                         <div class="control">
                             <input class="input" type="text" name="nome" id="nome" placeholder="Digite seu Nome:"
-                            value="<?$resultado["nome"];?>">
+                            value="<?$resultado["nome"];?>"disabled> 
                         </div>
                     </div>
-
                     <div class="field">
-                        <label class="label" for="rua">Rua</label>
+                        <label class="label" for="endereco">Rua</label>
                         <div class="control">
-                            <input class="input" type="text" name="rua" id="rua" placeholder="Digite a Rua:"
-                            value="<?$resultado["rua"];?>">>
+                            <input class="input" type="text" name="endereco" id="endereco" placeholder="Digite a Rua:"
+                            value="<?$resultado["rua"];?>"disabled>
                         </div>
                     </div>
                     <div class="field is-grouped">
                         <div class="control">
                             <label class="label" for="numero">Número da Residência</label>
                             <input class="input" type="text" name="numero" id="numero" placeholder="Número da Residência:"
-                            value="<?$resultado["numero"];?>">>
+                            value="<?$resultado["numero"];?>"disabled>
                         </div>
                         <div class="control">
                             <label class="label" for="bairro">Bairro</label>
                             <input class="input" type="text" name="bairro" id="bairro" placeholder="Informe o Bairro:"
-                            value="<?$resultado["bairro"];?>">
+                            value="<?$resultado["bairro"];?>"disabled>
                         </div>
                     </div>
                     <div class="field is-grouped">
                         <div class="control">
                             <label class="label" for="cep">CEP</label>
                             <input class="input" type="text" name="cep" id="cep" placeholder="CEP da sua Região:"
-                            value="<?$resultado["cep"];?>">
+                            value="<?$resultado["cep"];?>"disabled>
                         </div>
                         <div class="control">
                             <label class="label" for="cidade">Cidade</label>
                             <input class="input" type="text" name="cidade" id="cidade" placeholder="Informe a Cidade:"
-                            value="<?$resultado["cidade"];?>">
+                            value="<?$resultado["cidade"];?>"disabled>
                         </div>
                         <div class="control">
                             <label class="label" for="estado">Estado</label>
                             <input class="input" type="text" name="estado" id="estado" placeholder="Estado que Reside:"
-                            value="<?$resultado["estado"];?>">
+                            value="<?$resultado["estado"];?>"disabled>
                         </div>
                     </div>
                     <div class="field">
                         <label class="label" for="telefone">Telefone para Contato</label>
                         <div class="control">
                             <input class="input" type="tel" name="telefone" id="telefone" placeholder="Informe seu Número:"
-                            value="<?$resultado["telefone"];?>">
+                            value="<?$resultado["telefone"];?>"disabled>
                         </div>
                     </div>
                     <div class="field">
                         <label class="label" for="email">E-mail para Contato</label>
                         <div class="control">
                             <input class="input" type="text" name="email" id="email" placeholder="exemplo@exemplo.com"
-                            value="<?$resultado["email"];?>">
+                            value="<?$resultado["email"];?>"disabled>
                         </div>
                     </div>
                     <div class="field is-grouped">
                         <div class="control">
                             <label class="label" for="senha">Senha</label>
                             <input class="input" type="password" name="senha" id="senha" placeholder="Senha com 8 dígitos:"
-                            value="<?$resultado["senha"];?>">
+                            value="<?$resultado["senha"];?>"disabled>
                         </div>
                         <div class="control">
                             <label class="label" for="senha1">Confirmação de Senha</label>
                             <input class="input" type="password" name="senha1" id="senha1" placeholder="Repita a senha:"
-                            value="<?$resultado["senha1"];?>">
+                            value="<?$resultado["senha1"];?>"disabled>
                         </div>
                     </div>
                     <div class="field is-grouped">
