@@ -60,6 +60,16 @@
                             </div>
                         </div>
                     </div>
+
+                <div class="columns">
+                    <div class="column">
+                        <div class="field">
+                            <label class="label" for="carga"> Capacidade de carga:</label>
+                            <div class="control">
+                                <input class="input" type="text" name="carga" id="cargam" placeholder="Capacidade de carga em toneladas:">
+                            </div>
+                        </div>
+                    </div>
                     <div class="column">
                     <div class="field">
     <label class="label" for="cep">Placas do Veículo</label>
