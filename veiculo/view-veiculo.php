@@ -3,16 +3,15 @@
 <head>
 <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro de Veículos</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
-    <link rel="stylesheet" href="./sistema/css/bulmaveiculo.css">
+    <title>Veículos Cadastrados</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="../css/bulmaviewveiculo.css">
+    <link rel="icon" href="../img-icon/icons/hatchback.png">
 </head>
-<body>
-     
+<body>     
 <main class="section">
     <h2 class="title is-2 has-text-centered">CONSULTA E MANIPULAÇÃO DE DADOS: VEÍCULOS</h2>
-
-    <div class = "container-fluid">
+    <div class="container">
         <table class="table is-fullwidth">
             <thead>
                 <tr>
