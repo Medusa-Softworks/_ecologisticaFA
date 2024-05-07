@@ -1,9 +1,20 @@
+body {
+    background-color: #ececec;
+    max-height:max-content;
+    height: 100vh;
+    margin: 0;
+}
+
 /* Estilos para o formulário de cadastro de usuários */
 .container {
-    max-width: 800px; /* largura máxima do container */
-    margin: 0 auto; /* centraliza o container na página */
-    padding: 20px; /* espaçamento interno */
-}
+    background-color: #e2e2e2;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 15px;
+    border: 1px solid #686767; /* Adiciona uma borda sólida preta de 2px */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra preta com 5px de deslocamento horizontal e vertical, 10px de raio de dispersão e 20% de opacidade */
+    border-radius: 5px; /* Arredonda os cantos com um raio de 10px */
+  }
 
 .title {
     margin-bottom: 20px; /* espaçamento inferior do título */
@@ -14,7 +25,7 @@
 }
 
 .input {
-    margin-bottom: 15px; /* espaçamento inferior do campo de entrada */
+    margin-bottom: 10px; /* espaçamento inferior do campo de entrada */
 }
 
 .button {

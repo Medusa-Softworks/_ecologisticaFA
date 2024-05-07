@@ -1,9 +1,17 @@
 /* Estilos para o menu */
+body {
+    background-color: #e9e9e9;
+    max-height:max-content;
+    height: 100vh;
+    margin: 0;
+}
+
 .navbar {
     background-color: #54befc; /* cor de fundo do menu */
     border-bottom: 1px solid #c2e6fc; /* borda inferior */
     justify-content: center; /* centraliza o conteúdo horizontalmente */
     height: 50px; /* altura do menu */
+    margin-top: 8px;
 }
 
 .navbar-menu-bar {

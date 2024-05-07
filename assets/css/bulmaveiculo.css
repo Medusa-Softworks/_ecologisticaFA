@@ -1,16 +1,32 @@
-/* Estilos para a página de cadastro de veículos */
-.container {
-    margin-top: 20px;
+body {
+    background-color: #e9e9e9;
+    max-height:max-content;
+    margin: 0;
 }
-
-.columns {
-    margin-bottom: 20px;
-}
-
-.field {
-    margin-bottom: 10px;
-}
-
-.buttons {
-    margin-top: 20px;
-}
+  /* Estilos para o formulário de cadastro de usuários e veículos */
+  .container {
+    background-color: #e2e2e2;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 15px;
+    border: 1px solid #838383;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+  }
+  
+  /* Estilos para a página de cadastro de veículos */
+  .container {
+    margin-top: 20px; /* Additional margin for spacing */
+  }
+  
+  .columns {
+    margin-bottom: 10px; /* Adjust spacing between form input rows */
+  }
+  
+  .field {
+    margin-bottom: 10px; /* Consistent spacing for input fields */
+  }
+  
+  .buttons {
+    margin-top: 20px; /* Spacing for buttons */
+  }

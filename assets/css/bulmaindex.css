@@ -1,4 +1,11 @@
 /* Estilos para o título */
+body {
+    background-color: #e9e9e9;
+    max-height:max-content;
+    height: 100vh;
+    margin: 0;
+}
+
 .title {
     margin-top: 2rem;
     margin-bottom: 1rem;
@@ -28,8 +35,8 @@
 
 /* Estilos para o menu */
 .menu {
-    background-color: #82d1ff; /* cor de fundo do menu */
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* sombra */
+    background-color: #d3d3d3; /* cor de fundo do menu */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.322); /* sombra */
     display: flex; /* ativa o modelo flexbox */
     justify-content: center; /* centraliza horizontalmente */
     align-items: center; /* centraliza verticalmente */
@@ -47,7 +54,7 @@
 
 /* Estilos para o ícone do caminhão no título */
 .header img {
-    margin-left: 1rem;
+    margin-left: 55rem;
     margin-bottom: auto;
 }
 
