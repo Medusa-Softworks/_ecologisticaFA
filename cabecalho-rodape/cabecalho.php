@@ -1,6 +1,3 @@
-<div class ="header">  
-    <h1 align="center"><img src="../assets/img/icons/caminhao.png"
-        width= "100px" <br> Logística Inteligente
-    </h1>
-
-    </div>
+<div class="header">
+        <img src="./sistema/img-icon/icons/caminhao.png" width="70px">
+</div>
