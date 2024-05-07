@@ -4,7 +4,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     //filtra as informações do formulário
     
-    $idusuario = filter_input(INPUT_POST,"id", FILTER_SANITIZE_NUMBER_INT);
+    $id = filter_input(INPUT_POST,"id", FILTER_SANITIZE_NUMBER_INT);
 
         try {
         require_once("../_conexao.php");
@@ -14,7 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $comandoSQL = $conexao->prepare("
             DELETE FROM ecologistica.usuario WHERE `id` = :id");
         // vincula os dados do banco junto aos dados do formulário    
-        $comandoSQL->bindParam(":id", $idusuario, PDO::PARAM_STR);
+        $comandoSQL->bindParam(":id", $id, PDO::PARAM_STR);
        
     // executa os comando SQL no banco de dados
         $comandoSQL->execute();

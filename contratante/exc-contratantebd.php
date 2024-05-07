@@ -12,7 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         //busca os dados e prapara para exclusão
 
         $comandoSQL = $conexao->prepare("
-            DELETE FROM ecologistica.veiculo WHERE `id` = :id");
+            DELETE FROM ecologistica.contratante WHERE `id` = :id");
         // vincula os dados do banco junto aos dados do formulário    
         $comandoSQL->bindParam(":id", $id, PDO::PARAM_STR);
        
@@ -21,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         //verifica se há dados no banco para exclusão
         if ($comandoSQL->rowCount() > 0) {
-            header("Location: ../view-veiculo.php");
+            header("Location: ../view-contratante.php");
             exit();
         } else {
             echo "Erro na gravação dos dados";

@@ -12,7 +12,6 @@ CREATE TABLE `usuario` (
   `id` int (10) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `nome` varchar(200) NOT NULL,
   `telefone` varchar(20) NOT NULL,
-  `tipo` enum ('celular', 'fixo') NOT NULL,
   `email` varchar(100) NOT NULL,
   `senha`varchar(10) NOT NULL,
   `confirma_senha`varchar (10) NOT NULL,
@@ -50,12 +49,11 @@ CREATE TABLE `veiculo` (
     INSERT INTO `veiculo`(`id `,`marca`,`modelo`,`tipo`,`renavam`,`placa`,`conservacao`,`ano`,`combustivel`,`licenciamento`)
                   VALUES (' ','carro','onix', 'passeio', '123456789', 'XYZ1234','-75000km','2014','Etanol','2024');
 
--- ==============================TABELA FORNECEDOR ====================================
-CREATE TABLE `fornecedor` (
+-- ==============================TABELA CONTRATANTE ====================================
+CREATE TABLE `contratante` (
   `id` int (10) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `nome` varchar(200) NOT NULL,
   `telefone` varchar(20) NOT NULL,
-  `tipo` enum ('celular', 'fixo') NOT NULL,
   `email` varchar(100) NOT NULL,
   `rua`varchar(200) NOT NULL,
   `num`varchar(6) NOT NULL,
@@ -68,8 +66,8 @@ CREATE TABLE `fornecedor` (
 )
   ENGINE = InnoDB DEFAULT CHARSET=utf8mb4;
 
-    INSERT INTO `fornecedor`(`id `,`nome`,`telefone`,`tipo`,`email`,`rua`,`num`,`complemento`,`referencia`,`bairro`,`cidade`,`estado`,`cep`)
-    VALUES ('', 'fornecedor','1836363636','empresa', 'contratante@contratante.com.br','Avenida Prestes Maia','1764','Fatec','Rotatória','Ipanema','Araçatuba','SP','16052-045');
+    INSERT INTO `contratante`(`id `,`nome`,`telefone`,`tipo`,`email`,`rua`,`num`,`complemento`,`referencia`,`bairro`,`cidade`,`estado`,`cep`)
+    VALUES ('', 'contratante','1836363636','empresa', 'contratante@contratante.com.br','Avenida Prestes Maia','1764','Fatec','Rotatória','Ipanema','Araçatuba','SP','16052-045');
 
     -- ==============================TABELA ABASTECIMENTO ====================================
 CREATE TABLE `abastecimento` (
