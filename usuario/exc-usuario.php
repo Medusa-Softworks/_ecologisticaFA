@@ -93,7 +93,7 @@
                             <input class="button is-primary-light" type="button" value="Voltar" onclick="javascript:history.go(-1);">
                         </div>
                         <div class="control">
-                            <input class="button is-link" type="button" value="Página Inicial" onclick="voltarAoMenuInicial()">
+                            <input class="button is-primary-light" type="button" value="Página Inicial" onclick="voltarAoMenuInicial()">
                         </div>
                     </div>
                 </form>

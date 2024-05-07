@@ -5,13 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Visualização de usuários</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
-    <link rel="stylesheet" href="./sistema/css/bulmaviewuser.css">
+    <link rel="stylesheet" href="../css/bulmaviewuser.css">
 </head>
 <body>
-     <?php
-      include_once('../cabecalho-rodape/cabecalho.php');
-      ?>
-
 <main class="section">
     <h2 class="title is-2 has-text-centered">CONSULTA E MANIPULAÇÃO DE DADOS: USUÁRIOS</h2>
 
@@ -72,7 +68,6 @@
     <!-- Botões de ação -->
     <div class="buttons is-centered">
         <button class="button is-link" onclick="javascript:history.go(-1);">VOLTAR</button>
-        <button class="button is-primary" onclick="window.location.href='../menu.php';">MENU PRINCIPAL</button>
     </div>
 </main>
 </body>

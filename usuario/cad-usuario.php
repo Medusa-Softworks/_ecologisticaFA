@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de Usuários</title>
-    <link rel="stylesheet" href="./css/bulmacadusuario.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="../css/bulmacadusuario.css">
+    <link rel="icon" href="../img-icon/icons/perfil.png">
 </head>
 <body>
     <main>
@@ -82,7 +83,7 @@
                             <input class="button is-primary-light" type="button" value="Voltar" onclick="javascript:history.go(-1);">
                         </div>
                         <div class="control">
-                            <input class="button is-link" type="button" value="Página Inicial" onclick="voltarAoMenuInicial()">
+                            <input class="button is-primary-light" type="button" value="Página Inicial" onclick="voltarAoMenuInicial()">
                         </div>
                     </div>
                 </form>
