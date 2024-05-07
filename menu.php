@@ -5,14 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página Inicial</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
-    <link rel="icon" href="./sistema/img-icon/icons/login-seguro.png">
+    <link rel="icon" href="./img-icon/icons/casa.png">
     <link rel="stylesheet" href="./css/bulmamenu.css">
 
 </head>
 <body>
-    <?php
-    include_once("./cabecalho-rodape/cabecalho.php");
-    ?>
     <main>
         <div class="navbar" role="navigation" aria-label="main navigation">
             <div class="navbar-brand">
