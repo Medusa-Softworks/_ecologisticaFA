@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de Veículos</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
-    <link rel="stylesheet" href="./sistema/css/bulmaveiculo.css">
+    <link rel="stylesheet" href="../css/bulmaatuveiculo.css">
 </head>
 <main class="section">
         <h2 class="title is-2 has-text-centered">Consulta e manutenção de dados: Veículos</h2>
@@ -86,7 +86,7 @@
 
        <div class="columns">
                     <div class="column">
-                        <div class="field">Ano fabricação</label>
+                        <div class="field">Ano de Fabricação</label>
                             <div class="control">
                                 <input class="input" type="text" name="ano" id="ano" placeholder="Ano de fabricação:"
                                 value="<?$resultado["ano"];?>"disabled>
@@ -97,7 +97,7 @@
 
        <div class="columns">
                     <div class="column">
-                        <div class="field">Conservação</label>
+                        <div class="field">Estado de Conservação do Veículo</label>
                             <div class="control">
                                 <input class="input" type= "text" name:="conservacao" id="conservacao" placeholder="Estado de conservação:"
                                 value="<?$resultado["conservacao"];?>"disabled>
@@ -119,7 +119,7 @@
        
        <div class="columns">
                     <div class="column">
-                        <div class="field">Data licenciamento</label>
+                        <div class="field">Data do Licenciamento</label>
                             <div class="control">
                             <input class="input" type= "text" name:="dt_licenciamento" id="dt_licenciamento" placeholder="Data do licenciamento:"
                                 value="<?$resultado["dt_licenciamento"];?>"disabled>
@@ -131,11 +131,17 @@
         <div class="space 5v"></div>
 
         <!-- Botões de ação -->
-        <div class="row-fluid justify-center">
-            <input type="reset" value="VOLTAR" onclick="javascript:history.go(-1);">
-            <input type="submit" value="SALVAR" id="submit" onclick="validarFormulario()">
-            <input type="reset" value="MENU PRINCIPAL" onclick="voltarAoMenuInicial()">
-        </div>
+        <div class="field is-grouped is-grouped-centered">
+                <div class="control">
+                    <input type="reset" class="button is-light" value="VOLTAR" onclick="javascript:history.go(-1);">
+                </div>
+                <div class="control">
+                    <input type="submit" class="button is-success" value="SALVAR" id="submit" onclick="validarFormulario()">
+                </div>
+                <div class="control">
+                    <input type="reset" class="button is-info" value="MENU PRINCIPAL" onclick="voltarAoMenuInicial()">
+                </div>
+            </div>
         </form>
     </div>
 </main>
