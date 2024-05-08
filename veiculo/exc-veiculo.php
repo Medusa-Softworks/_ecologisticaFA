@@ -56,6 +56,7 @@
                             <label class="label" for="tipo">Tipo</label>
                             <div class="control">
                                 <input class="input" type="text" name="tipo" id="tipo" placeholder="Tipo:"
+                                <input class="input" type="text" name="tipo" id="tipo" placeholder="Tipo:"
                                 value="<?$resultado["tipo"];?>"disabled>
                             </div>
                         </div>

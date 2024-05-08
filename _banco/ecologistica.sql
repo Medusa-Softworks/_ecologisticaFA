@@ -13,12 +13,12 @@ CREATE TABLE `usuario` (
   `nome` varchar(200) NOT NULL,
   `telefone` varchar(20) NOT NULL,
   `email` varchar(100) NOT NULL,
-  `senha`varchar(10) NOT NULL,
-  `confirma_senha`varchar (10) NOT NULL,
-  `rua`varchar(200) NOT NULL,
-  `num`varchar(6) NOT NULL,
-  `complemento`varchar(100),
-  `referencia`varchar(100),
+  `senha` varchar(10) NOT NULL,
+  `confirma_senha` varchar(10) NOT NULL,
+  `rua` varchar(200) NOT NULL,
+  `num` varchar(6) NOT NULL,
+  `complemento` varchar(100),
+  `referencia` varchar(100),
   `bairro` varchar(150) NOT NULL,
   `cidade` varchar(150) NOT NULL,
   `estado` varchar(2) NOT NULL,
@@ -26,8 +26,8 @@ CREATE TABLE `usuario` (
 )
   ENGINE = InnoDB DEFAULT CHARSET=utf8mb4;
 
-    INSERT INTO `usuario`(`id `,`nome`,`telefone`,`tipo`,`email`,`senha`,`confirma_senha`,`rua`,`num`,`complemento`,`referencia`,`bairro`,`cidade`,`estado`,`cep`) VALUES (, 'admin','1836363636', 'ecologistica@ecologistica.com.br', 'Eco2024@',
-    'Eco2024@','Avenida Prestes Maia','1764','Fatec','Rotatória','Ipanema','Araçatuba','SP','16052-045');
+    INSERT INTO `usuario`(`id`, `nome`, `telefone`, `email`, `senha`, `confirma_senha`, `rua`, `num`, `complemento`, `referencia`, `bairro`, `cidade`, `estado`, `cep`)
+    VALUES ('', 'admin', '1836363636', 'ecologistica@ecologistica.com.br', 'Eco2024@', 'Eco2024@', 'Avenida Prestes Maia', '1764', 'Fatec', 'Rotatória', 'Ipanema', 'Araçatuba', 'SP', '16052-045');
 
 -- ==============================TABELA VEÍCULO ====================================
 DROP TABLE IF EXISTS `veiculo`;
@@ -42,12 +42,11 @@ CREATE TABLE `veiculo` (
   `conservacao`enum ('0km','-5000km','-30000km','-75000km','-150000km','+200000km') NOT NULL,
   `ano`int (5),
   `combustivel`enum('Gasolina','Etanol','Diesel_S500','Diesel_S10','Híbrido','Elétrico') NOT NULL,
-  `licenciamento`date NOT NULL,
+  `licenciamento`date NOT NULL
   )
   ENGINE = InnoDB DEFAULT CHARSET=utf8mb4;
 
-    INSERT INTO `veiculo`(`id `,`marca`,`modelo`,`tipo`,`renavam`,`placa`,`conservacao`,`ano`,`combustivel`,`licenciamento`)
-                  VALUES (' ','carro','onix', 'passeio', '123456789', 'XYZ1234','-75000km','2014','Etanol','2024');
+    VALUES ('', 'carro', 'onix', 'passeio', '123456789', 'XYZ1234', '-75000km', 2014, 'Etanol', '2024');
 
 -- ==============================TABELA CONTRATANTE ====================================
 CREATE TABLE `contratante` (
@@ -66,8 +65,8 @@ CREATE TABLE `contratante` (
 )
   ENGINE = InnoDB DEFAULT CHARSET=utf8mb4;
 
-    INSERT INTO `contratante`(`id `,`nome`,`telefone`,`tipo`,`email`,`rua`,`num`,`complemento`,`referencia`,`bairro`,`cidade`,`estado`,`cep`)
-    VALUES ('', 'contratante','1836363636','empresa', 'contratante@contratante.com.br','Avenida Prestes Maia','1764','Fatec','Rotatória','Ipanema','Araçatuba','SP','16052-045');
+    INSERT INTO `contratante`(`id `,`nome`,`telefone`,`email`,`rua`,`num`,`complemento`,`referencia`,`bairro`,`cidade`,`estado`,`cep`)
+    VALUES ('', 'contratante', '1836363636', 'contratante@contratante.com.br', 'Avenida Prestes Maia', '1764', 'Fatec', 'Rotatória', 'Ipanema', 'Araçatuba', 'SP', '16052-045');
 
     -- ==============================TABELA ABASTECIMENTO ====================================
 CREATE TABLE `abastecimento` (
@@ -76,9 +75,9 @@ CREATE TABLE `abastecimento` (
   `quantidade` decimal(5,3) NOT NULL,
   `combustivel` enum ('Gasolina', 'Etanol','Diesel_S500','Diesel_S10','Energia') NOT NULL,
   `id_veiculo` int(10) NOT NULL,
-  `km_atual`decimal(5,3) NOT NULL,
-  `vl_litro`decimal(5,3) NOT NULL,
-  `valor_total`decimal(5,3)
+  `km_atual` decimal(5,3) NOT NULL,
+  `vl_litro` decimal(5,3) NOT NULL,
+  `valor_total` decimal(5,3)
   
 )
   ENGINE = InnoDB DEFAULT CHARSET=utf8mb4;
@@ -92,10 +91,10 @@ CREATE TABLE `abastecimento` (
 CREATE TABLE `frete` (
   `id` int (10) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `dia` date NOT NULL,
-  `id_contratante`int(10) NOT NULL,
+  `id_contratante` int(10) NOT NULL,
   `tipo` varchar(50) NOT NULL,
   `valor` decimal(5,3) NOT NULL,
-  'km_carga') decimal(5,3), NOT NULL,
+  `km_carga`) decimal(5,3), NOT NULL,
   `km_descarga` decimal(5,3) NOT NULL,
   `km_total` decimal(5,3) NOT NULL
   
@@ -115,7 +114,7 @@ CREATE TABLE `financeiro` (
   `custo_abastecimento`decimal(5,3) NOT NULL,
   `vl_alimentacao` varchar(50) NOT NULL,
   `vl_pernoite` decimal(5,3) NOT NULL,
-  'vl_ajudante') decimal(5,3), NOT NULL,
+  `vl_ajudante` decimal(5,3), NOT NULL,
   `vl_pedagio` decimal(5,3) NOT NULL,
   `diversos` decimal(5,3) NOT NULL,
   `vl_total` decimal(5,3) NOT NULL
@@ -124,7 +123,7 @@ CREATE TABLE `financeiro` (
 )
   ENGINE = InnoDB DEFAULT CHARSET=utf8mb4;
 
-INSERT INTO `financeiro`(`id`,`valor_frete`,`custo_abastecimento`,`vl_alimentacao`,`vl_pernoite`,`vl_ajudante`,`vl_pedagio`,`diversosl`,`vl_total`)
+INSERT INTO `financeiro`(`id`,`valor_frete`,`custo_abastecimento`,`vl_alimentacao`,`vl_pernoite`,`vl_ajudante`,`vl_pedagio`,`diversos`,`vl_total`)
 VALUES ('', frete.valor, abastecimento.valor_total, '50,00', '100,00', '100,00', '30,00', '25,00',
        frete.valor - (abastecimento.valor_total + 50.00 + 100.00 + 100.00 + 30.00 + 25.00));
 FROM fornecedor, abastecimento
