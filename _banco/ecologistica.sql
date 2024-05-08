@@ -92,7 +92,7 @@ CREATE TABLE `abastecimento` (
 CREATE TABLE `frete` (
   `id` int (10) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `dia` date NOT NULL,
-  `id_fornecedor`int(10) NOT NULL,
+  `id_contratante`int(10) NOT NULL,
   `tipo` varchar(50) NOT NULL,
   `valor` decimal(5,3) NOT NULL,
   'km_carga') decimal(5,3), NOT NULL,
@@ -103,10 +103,10 @@ CREATE TABLE `frete` (
 )
   ENGINE = InnoDB DEFAULT CHARSET=utf8mb4;
 
-    INSERT INTO `abastecimento`(`id `,`dia`,`id_fornecedor`,`tipo`,`valor`,`km_carga`,`km_descarga`,`km_total`)
-    VALUES ('', '10052024',fornecedor.id,'1000,00','15000','20000',km_descarga - km_carga);
-    FROM forcenedor
-    WHERE id_fornecedor = '01';
+    INSERT INTO `abastecimento`(`id `,`dia`,`id_contratante`,`tipo`,`valor`,`km_carga`,`km_descarga`,`km_total`)
+    VALUES ('', '10052024',contratante.id,'1000,00','15000','20000',km_descarga - km_carga);
+    FROM contratante
+    WHERE id_contratante = '01';
 
       -- ==============================TABELA FINANCEIRO ====================================
 CREATE TABLE `financeiro` (

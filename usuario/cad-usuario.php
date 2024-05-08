@@ -13,63 +13,71 @@
         <section class="section">
             <div class="container">
                 <h2 class="title is-2 has-text-centered">CADASTRO DE USUÁRIOS</h2>
-                <form action="./cad-usuariobd.php" method="POST" enctype="multipart/form-data">
+                <form action="./cad-usuariobd.php" method="POST" enctype="multipart/form-data" onsubmit="return validarFormulario()">
                     <div class="field">
                         <label class="label" for="nome">Nome Completo:</label>
                         <div class="control">
-                            <input class="input" type="text" name="nome" id="nome" placeholder="Digite seu Nome:">
+                            <input class="input" type="text" name="nome" id="nome" placeholder="Digite seu Nome">
                         </div>
                     </div>
                     <div class="field">
-                        <label class="label" for="endereco">Rua</label>
+                        <label class="label" for="endereco">Endereço:</label>
                         <div class="control">
-                            <input class="input" type="text" name="endereco" id="endereco" placeholder="Digite a Rua:">
-                        </div>
-                    </div>
-                    <div class="field is-grouped">
-                        <div class="control">
-                            <label class="label" for="numero">Número da Residência</label>
-                            <input class="input" type="text" name="numero" id="numero" placeholder="Número da Residência:">
-                        </div>
-                        <div class="control">
-                            <label class="label" for="bairro">Bairro</label>
-                            <input class="input" type="text" name="bairro" id="bairro" placeholder="Informe o Bairro:">
-                        </div>
-                    </div>
-                    <div class="field is-grouped">
-                        <div class="control">
-                            <label class="label" for="cep">CEP</label>
-                            <input class="input" type="text" name="cep" id="cep" placeholder="CEP da sua Região:">
-                        </div>
-                        <div class="control">
-                            <label class="label" for="cidade">Cidade</label>
-                            <input class="input" type="text" name="cidade" id="cidade" placeholder="Informe a Cidade:">
-                        </div>
-                        <div class="control">
-                            <label class="label" for="estado">Estado</label>
-                            <input class="input" type="text" name="estado" id="estado" placeholder="Estado que Reside:">
+                            <input class="input" type="text" name="endereco" id="endereco" placeholder="Digite seu Endereço">
                         </div>
                     </div>
                     <div class="field">
-                        <label class="label" for="telefone">Telefone para Contato</label>
+                        <label class="label" for="numero">Número da Residência:</label>
                         <div class="control">
-                            <input class="input" type="tel" name="telefone" id="telefone" placeholder="Informe seu Número:">
+                            <input class="input" type="text" name="numero" id="numero" placeholder="Digite o Número da Residência">
                         </div>
                     </div>
                     <div class="field">
-                        <label class="label" for="email">E-mail para Contato</label>
+                        <label class="label" for="bairro">Bairro:</label>
                         <div class="control">
-                            <input class="input" type="text" name="email" id="email" placeholder="exemplo@exemplo.com">
+                            <input class="input" type="text" name="bairro" id="bairro" placeholder="Digite o Bairro">
                         </div>
                     </div>
-                    <div class="field is-grouped">
+                    <div class="field">
+                        <label class="label" for="cep">CEP:</label>
                         <div class="control">
-                            <label class="label" for="senha">Senha</label>
-                            <input class="input" type="password" name="senha" id="senha" placeholder="Senha com 8 dígitos:">
+                            <input class="input" type="text" name="cep" id="cep" placeholder="Digite o CEP">
                         </div>
+                    </div>
+                    <div class="field">
+                        <label class="label" for="cidade">Cidade:</label>
                         <div class="control">
-                            <label class="label" for="senha1">Confirmação de Senha</label>
-                            <input class="input" type="password" name="senha1" id="senha1" placeholder="Repita a senha:">
+                            <input class="input" type="text" name="cidade" id="cidade" placeholder="Digite a Cidade">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="label" for="estado">Estado:</label>
+                        <div class="control">
+                            <input class="input" type="text" name="estado" id="estado" placeholder="Digite o Estado">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="label" for="telefone">Telefone para Contato:</label>
+                        <div class="control">
+                            <input class="input" type="tel" name="telefone" id="telefone" placeholder="Digite o Telefone">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="label" for="email">E-mail para Contato:</label>
+                        <div class="control">
+                            <input class="input" type="email" name="email" id="email" placeholder="Digite o E-mail">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="label" for="senha">Senha:</label>
+                        <div class="control">
+                            <input class="input" type="password" name="senha" id="senha" placeholder="Digite a Senha">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="label" for="senha1">Confirmação de Senha:</label>
+                        <div class="control">
+                            <input class="input" type="password" name="senha1" id="senha1" placeholder="Confirme a Senha">
                         </div>
                     </div>
                     <div class="field is-grouped">
@@ -79,6 +87,7 @@
                         <div class="control">
                             <input class="button is-danger" type="reset" value="Limpar">
                         </div>
+                        
                         <div class="control">
                             <input class="button is-primary-light" type="button" value="Voltar" onclick="javascript:history.go(-1);">
                         </div>

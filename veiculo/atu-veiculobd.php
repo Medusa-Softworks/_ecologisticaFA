@@ -50,7 +50,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $comandoSQL->bindParam(":ano", $ano, PDO::PARAM_STR);
         $comandoSQL->bindParam(":conservacao", $conservacao, PDO::PARAM_STR);
         $comandoSQL->bindParam(":combustivel", $combustivel, PDO::PARAM_STR);
-        $comandoSQL->bindParam(":combustivel", $combustivel, PDO::PARAM_STR);
+        $comandoSQL->bindParam(":dt_licenciamento", $dt_licenciamento, PDO::PARAM_STR);
 
         $comandoSQL->execute();
 
