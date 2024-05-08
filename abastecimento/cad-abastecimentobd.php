@@ -4,12 +4,12 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
         
         // Filtrando as informações recebidas
         $dia = filter_input(INPUT_POST, "dia", FILTER_SANITIZE_SPECIAL_CHARS);
-        $qtde = filter_input(INPUT_POST, "qtde", FILTER_SANITIZE_SPECIAL_CHARS);
+        $quantidade = filter_input(INPUT_POST, "quantidade", FILTER_SANITIZE_SPECIAL_CHARS);
         $combustivel = filter_input(INPUT_POST, "combustivel", FILTER_SANITIZE_SPECIAL_CHARS);
         $id_veiculo = filter_input(INPUT_POST, "idVeiculo", FILTER_SANITIZE_SPECIAL_CHARS);
-        $km_atual = filter_input(INPUT_POST, "kmAtual", FILTER_SANITIZE_SPECIAL_CHARS);
-        $vl_litro = filter_input(INPUT_POST, "valorLitro", FILTER_SANITIZE_SPECIAL_CHARS);
-        $valor_total = filter_input(INPUT_POST, "valorTotal", FILTER_SANITIZE_SPECIAL_CHARS);
+        $km_atual = filter_input(INPUT_POST, "km_atual", FILTER_SANITIZE_SPECIAL_CHARS);
+        $vl_litro = filter_input(INPUT_POST, "vl_Litro", FILTER_SANITIZE_SPECIAL_CHARS);
+        $valor_total = filter_input(INPUT_POST, "valor_total", FILTER_SANITIZE_SPECIAL_CHARS);
 
     
         try{
@@ -26,7 +26,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
                    `valor_total`                             
                 ) VALUES (
                     :dia,
-                    :qtde,
+                    :quantidade,
                     :combustivel,      
                     :id_veiculo,      
                     :km_atual,      
@@ -37,7 +37,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
 
            
             $comandoSQL->bindParam(":dia", $dia, PDO::PARAM_STR);
-            $comandoSQL->bindParam(":qtde", $qtde, PDO::PARAM_STR);
+            $comandoSQL->bindParam(":quantidade", $quantidade, PDO::PARAM_STR);
             $comandoSQL->bindParam(":combustivel", $combustivel, PDO::PARAM_STR);
             $comandoSQL->bindParam(":id_veiculo", $id_veiculo, PDO::PARAM_STR);
             $comandoSQL->bindParam(":km_atual", $km_atual, PDO::PARAM_STR);
